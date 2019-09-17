@@ -137,6 +137,17 @@ form{
 	font-size: 1.5rem;
 }
 
+#error{
+	margin-bottom: 20px;
+	padding: 0px;
+	background:red;
+	text-align: center;
+	font-size: 14px;
+	transition: all 0.5s ease;
+	color: #fff;
+
+}
+
 .switch-login a span{
 	color:#fc8888; 
 }
