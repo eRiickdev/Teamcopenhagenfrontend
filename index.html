@@ -1,61 +1,97 @@
+<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login Form Design</title>
-    <link rel="stylesheet" type="text/css" href="style1.css">
-    <script type="text/javascript">
-        function validate() {
-            var uname = document.getElementById("uname");
-            var password = document.getElementById("pass");
+    <meta name="vieweport" content="width=device-width, initial-scale=1.0 shrink-to-fit=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Copenhagen</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-            if (uname.value.trim() == "") {
-                  alert("Blank Username");     
-            
-                return false;
-            }
-
-            else if (password.value.trim() == "") {
-                alert("Blank Password");
-                // pass.style.border = "solid 3px red";    
-                return false;
-            }
-
-            else if (password.value.trim().length < 5)
-             {
-                alert("Password should be at least 5 characters");
-                }
-               
-
-            else {
-                return true;
-            }
-
-
-        }
-    </script>
 </head>
+
 <body>
-    <div class="loginbox">
-        <img src="team logo.jpg" class="avatar">
-        
-        <form onsubmit="return validate()" ;>
-            <p style="color: black">Username</p> 
-            <input id="uname" type="text" name="" placeholder="Enter Username"/>
-            <label id="lbluser" style="color:red; visibility: hidden;">Invalid</label>
-            <p style="color: black">Password</p>
-            <input id="pass" type="password" name="" placeholder="Enter Password">
-            <input type="submit" name="" value="Login"><br><br>
-          
-            <a href="register.html"  style="color: purple" ><i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Sign up here</b></i> </a>
+
+    <nav>
+
+        <div class="navbar">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="logoimg" height="60">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container" align="center">
+        <form name="login" action="" id="mylogin" method="Post">
+            <div class="col">
+                <h2>Login:</h2>
+                <!--<div class="vl">
+                    <span class="vl-innertext">or</span>
+                </div>-->
+            </div>
+            <!-- Login with Social Media-->
+            <p class="sm"> with Social Media</p>
+            <div class="col">
+                    <a href="#" class="fb btn">
+                      <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                    </a>
+                    <br> 
+                    <br>
+                   
+
+                    <a href="#" class="twitter btn">
+                      <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                    </a>
+                    <br>
+                    <br>
+                
+
+                    <a href="#" class="google btn">
+                      <i class="fa fa-google fa-fw"></i> Login with Google
+                    </a>
+            </div>
+
+            <!--text styling-->
+            <p class="log">Or <br> 
+                Login in with email:</p>
+
+            <!-- form input field-->
+            
+            <label for="username"></label> <br>
+                <input type="email" id="uname" name="username" placeholder="Username" pattern="[a-Z0-9._%+-]+@[a-z0.9.-]+\.[a-z]{2,}$" title="enter the correct email format" required> <br><br>
+                
+            <label for="password"></label> <br>
+                <input type="password" id="pwsd" name="password" placeholder="Password" pattern="[a-zA-Z0-9._%]{8,}" title="password must be 8 characters long" required><br><br>
+                
+             
+            
+            <lable><input type="checkbox">Remember me</lable>  <br>
+                    <br>
+                    <button class="mybtn">Login</button>  
+                
+         <!--forgot password and Sign Up call to action-->
+        <div class="bottom-container">
+            <div class="col">
+              <div class="col">
+                <a href="#" style="color:black" class="fbtn">Forgot password?</a>
+              </div>
+              <br>
+              <br>
+              <div class="col">
+                    <a href="#" style="color:black" class="sbtn">Sign up</a>
+                  </div>
+            </div>
+        </div>
+            
         </form>
+    </div>  
+   
 
-    </div>
 </body>
+
 </html>
-
-
-
 
