@@ -55,7 +55,7 @@ h1{
     background: transparent;
     outline: none;
     height: 40px;
-    color:white;
+    color:rgb(41, 6, 6);
     font-size: 16px;
 }
 .loginbox input[type="submit"]
