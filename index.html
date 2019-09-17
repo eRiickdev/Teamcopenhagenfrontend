@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+      <meta charset="UTF-8">
+      <title>Log in Demo</title>
+      <script src="https://kit.fontawesome.com/64f240fcea.js"></script>
+</head>
+<style>
+      
+      input[type=text], input[type=password] {
+            display: inline-block;
+            border: 1px solid #ccc;
+            padding: 12px 20px;
+            width: 85%;
+            margin: 8px 0 ;
+            box-sizing: border-box;
+      }
+
+      .login-session{
+            letter-spacing: 1px;
+            text-align: center;
+            font-family: monospace;
+            opacity: 0.7;
+      }
+
+      .btn{
+            background-color: #4CAF50;
+            color: #fff;
+            border: 0;
+            padding: 12px 20px;
+            cursor: pointer;
+            margin: 8px 0;
+            width:35%;
+            border-radius: 4px;
+      }
+
+      .btn:hover{
+            opacity: 0.8;
+            border: 0;
+      }
+
+      .btn-default{ 
+            background-color: orange;
+            margin-left:102px; 
+      }
+
+      .container{
+            margin:0;
+            width: 70%;
+            padding: 40px 80px 80px 40px; 
+            background-color: #f1f1f1;
+      }
+
+      span{
+            border: 1px solid #ccc;
+            border-right: 0;
+            padding: 10px 18px 12px 18px;
+      }
+
+      a{
+            text-decoration: none;
+            margin-left:15px;
+            
+      }
+
+      label{ 
+            color: grey;
+            margin-top: 12px;
+            margin-right: 10px;
+      }
+
+      .img-container{
+            text-align: center;
+            margin: 24px 0 12px 0;
+      }
+
+      .avatar{
+            border-radius: 100%;
+            width: 40%;
+      }
+
+      em{
+            float: right;
+            margin-right: 35px;
+            color: #E05C65;
+      }
+
+      form{
+            width: 50%;
+            height: 100%;
+      }
+
+      body{ margin: 0 auto; }
+
+      @media(max-width: 1200px){
+            .btn{
+                  width:100%;
+            }
+            .btn-default{
+                  margin-left: 0;
+            }
+            form{
+                  width: 50%;
+            }
+            input[type=text], input[type=password]{
+                  width: 92%;
+            }
+            .container{
+                  padding: 40px 40px;
+                  width: 100%;
+                  margin: 0;
+            }
+      }
+       @media(max-width: 800px){
+            input[type=text], input[type=password]{
+                  width: 85%;
+            }
+
+       }
+
+</style>
+<body>
+<form>
+      <div class="container">
+            <div class="img-container">
+                  <img src="./img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="login-session" style="align:center"><h3>User Login</h3></div>
+
+            <div class="form-group">
+                  <em class="validity"></em>
+                  <span><i class="far fa-user"></i></span><input name="userName" type="text" placeholder="Username" required />
+            </div>
+
+            <div class="form-group">
+                  <em class="validity"></em>
+                  <span><i class="fas fa-lock"></i></span><input name="password" type="password" id="password" placeholder="Password" />
+            </div>
+
+            <button type="submit" class="btn">Log in</button>
+            <button class="btn btn-default">Cancel</button>
+
+            <div class="form-group">
+                  <center><label><input type="checkbox" checked="checked">Remember Me</label>
+                  <a href="#">Forgot Password?</a></center>
+            </div>
+      </div>
+</form>
+
+
+</body>
+
+<script>
+      //Javascript Goes here!!!
+</script>
+</html>
