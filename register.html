@@ -13,33 +13,35 @@
 <div id="wrapper">
 	<div class="container">
 		<span class="heading">Copenhagen Sign Up</span>
-		<form action="" method="post">
+		
+		<form action="" method="post" onsubmit="return validate()">
+			<div id="error"></div>
 			<div class="input-group">
 				<i class="fas fa-user"></i>
-				<input type="text" name="username" placeholder="Username" required>
+				<input type="text" name="username" placeholder="Username" id="username" required>
 				<span class="bar"></span>
 			</div>
 
 			<div class="input-group">
 				<i class="fas fa-envelope"></i>
-				<input type="email" name="email" placeholder="Email" required>
+				<input type="email" name="email" placeholder="Email" id="email">
 				<span class="bar"></span>
 			</div>
 
 			<div class="input-group">
 				<i class="fas fa-lock"></i>
-				<input type="password" name="password" placeholder="Password" required>
+				<input type="password" name="password" placeholder="Password" id="password" required>
 				<span class="bar"></span>
 			</div>
 
 			<div class="input-group">
 				<i class="fas fa-lock"></i>
-				<input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+				<input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required>
 				<span class="bar"></span>
 			</div>
 
 			<div class="input-group">
-				<button>
+				<button id="submit" type="submit">
 					<i class="fab fa-telegram-plane"></i>
 				</button>
 			</div>
@@ -54,6 +56,6 @@
 </div>
 
 
-
+<script src="register.js"></script>
 </body>
 </html>
