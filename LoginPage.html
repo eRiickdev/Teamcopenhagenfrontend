@@ -5,22 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login Form Design</title>
     <link rel="stylesheet" type="text/css" href="style1.css">
+    <script type="text/javascript">
+        function validate() {
+            var uname = document.getElementById("uname");
+            var password = document.getElementById("pass");
+
+            if (uname.value.trim() == "") {
+                  alert("Blank Username");     
+            
+                return false;
+            }
+
+            else if (password.value.trim() == "") {
+                alert("Blank Password");
+                // pass.style.border = "solid 3px red";    
+                return false;
+            }
+
+            else if (password.value.trim().length < 5)
+             {
+                alert("Password should be at least 5 characters");
+                }
+               
+
+            else {
+                return true;
+            }
+
+
+        }
+    </script>
 </head>
 <body>
     <div class="loginbox">
-        <img src="img/Team Copenhagen.jpg" class="avatar">
-        <h1 class="title" id="error" style="color: orangered">Login Here</h1>
+        <img src="Team Copenhagen.jpg" class="avatar">
         
-        <form>
+        <form onsubmit="return validate()" ;>
             <p style="color: black">Username</p> 
-            <input type="text" name="" placeholder="Enter Username">
+            <input id="uname" type="text" name="" placeholder="Enter Username"/>
+            <label id="lbluser" style="color:red; visibility: hidden;">Invalid</label>
             <p style="color: black">Password</p>
-            <input type="password" name="" placeholder="Enter Password">
+            <input id="pass" type="password" name="" placeholder="Enter Password">
             <input type="submit" name="" value="Login"><br><br>
-            <a href="#" style="color: purple"><i>Lost your password?</i> </a><br><br>
-            <a href="#" style="color: purple"><i>Don't have an account?</i> </a>
+          
+            <a href="register.html"  style="color: purple" ><i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Sign up here</b></i> </a>
         </form>
-
 
     </div>
 </body>
