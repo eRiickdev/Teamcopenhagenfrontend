@@ -57,7 +57,7 @@ body{
 }
 
 form{
-	transform: translateX(10rem);
+	transform: translateX(2rem);
 	padding: 2rem 0;
 	background-color: #fff;
 	border-radius: 1rem;
