@@ -10,7 +10,15 @@ html{
 }
 
 body{
-	background-color: rgba(200, 30, 255, 0.1);
+
+	 background: url(Copenhagen.jpeg) no-repeat;
+	  margin: 0%;
+    padding: 0%;
+   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+	 
 }
 
 #wrapper{
@@ -23,14 +31,7 @@ body{
 }
 
 .container{
-	width: 100%;
-	max-width: 40rem;
-	background-color: #fff;
-	position: relative;
-	padding: 10rem 0;
-	box-shadow: 0 1px 1.5rem rgba(0,0,0,0.1);
-	border-radius: 1rem;
-	z-index: 1;
+
 }
 
 .container::before{
@@ -143,16 +144,6 @@ form{
 .switch-login a span:hover{
 	padding-bottom: 2px;
 	border-bottom: 2px solid #fc8888;
-}
-
-#error{
-	margin-bottom: 20px;
-	padding: 0px;
-	background:red;
-	text-align: center;
-	font-size: 14px;
-	transition: all 0.5s ease;
-	color: #fff;
 }
 
 @media screen and (max-width:700px){
