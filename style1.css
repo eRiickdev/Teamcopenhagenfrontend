@@ -1,53 +1,135 @@
-body{
-    margin: 0%;
-    padding: 0%;
-    background: url(Copenhagen.jpeg);
-    background-size: cover;
-    background-position: center;
-    font-family: sans-serif;
-}
+ body {
+            position: absolute;
+            width: 1350px;
+            height: 630px;
+            background: #FFFFFF;
 
-.loginbox{
-    width: 320px;
-    height: 420px;
-    background:rgba(255, 255, 255, 0.5);;
-    color: rgb(255, 255, 255);
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-}
+            margin: 0%;
+            padding: 0%;
+            background: url(Copenhagen.jpeg);
+            background-size: cover;
+            background-position: center;
+            font-family: sans-serif;
+        }
 
+        .loginbox {
+            position: absolute;
+            width: 550px;
+            height: 391px;
+            left: 400px;
+            top: 220px;
+            background: rgba(242, 242, 242, 0.5);
+            border-radius: 15px;
+        }
 
-.avatar{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
-}
+        #LoginText {
+            position: absolute;
+            width: 132px;
+            height: 56px;
+            left: 220px;
+            top: -25px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 56px;
+            color: #333333;
+        }
 
-h1{
-    margin: 0%;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
-}
+        #underline {
 
-.loginbox p{
-    margin: 0%;
-    padding: 0%;
-    font-weight: bold;
-}
+            position: absolute;
+            width: 352px;
+            height: 0px;
+            left: 105px;
+            top: 80px;
+            border: 1px solid #000000;
+        }
 
-.loginbox input{
-    width: 100%;
-    margin-bottom: 20px;
-}
+        #uname {
+            position: absolute;
+            width: 426px;
+            height: 52px;
+            left: 70px;
+            top: 100px;
+            background:rgba(62, 179, 214, 0.74);
+            border-radius: 20px;
+        }
 
+<<<<<<< HEAD
+        .loginbox input[type="text"],
+        input[type="password"] {
+
+            position: absolute;
+            width: 60px;
+            height: 28px;
+            left: 519px;
+            top: 487px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+            color: #F2F2F2;
+        }
+
+        #pass {
+            position: absolute;
+            width: 426px;
+            height: 52px;
+            left: 70px;
+            top: 170px;
+            background: rgba(62, 179, 214, 0.74);
+            border-radius: 20px;
+        }
+
+        #submit {
+            position: absolute;
+            width: 426px;
+            height: 52px;
+            left: 70px;
+            top: 240px;
+            background: #333333;
+            border-radius: 20px;
+        }
+
+        .loginbox input[value="Log In"] {
+            position: absolute;
+            width: 75px;
+            height: 28px;
+            left: 150px;
+            top: 270px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        #create {
+            position: absolute;
+            width: 550px;
+            height: 52px;
+            left: 0px;
+            top: 340px;
+            background: rgba(62, 179, 214, 0.74);
+            border-radius: 0px 0px 18px 18px;
+        }
+
+        .submitext {
+            position: absolute;
+            width: 195px;
+            height: 28px;
+            left: 195px;
+            top: 10px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+            color: #333333;
+        }
+=======
 .loginbox input[type="text"], input[type="password"]
 {
     border: none;
@@ -82,3 +164,4 @@ h1{
 .loginbox a:hover{
     color: #ffc107;
 }
+>>>>>>> 41319abe0e1555a763ea493363c297a2aefcba36
