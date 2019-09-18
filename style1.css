@@ -115,9 +115,22 @@
             border-radius: 0px 0px 18px 18px;
         }
       @media only screen and (min-width: 701px) and (max-width: 900px){
-          #background {
-              padding: 0;
-          }
+          
+              .body {
+            position: absolute;
+            width: 270px;
+            height:126px;
+            background: #FFFFFF;
+
+            margin: 0%;
+            padding: 0%;
+            background: url(Copenhagen.jpeg);
+            background-size: cover;
+            background-position: center;
+            font-family: sans-serif;
+        }
+
+          
       }
 
         .submitext {
