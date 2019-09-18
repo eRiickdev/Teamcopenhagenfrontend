@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Team Copenhagen</title>
+        <link rel="stylesheet" type="text/css" href="style1.css">
+   
+    <script type="text/javascript">
+        function validate() {
+            var uname = document.getElementById("uname");
+            var password = document.getElementById("pass");
+
+            if (uname.value.trim() == "") {
+                alert("Blank Username");
+
+                return false;
+            }
+
+            else if (password.value.trim() == "") {
+                alert("Blank Password");
+                // pass.style.border = "solid 3px red";    
+                return false;
+            }
+
+            else if (password.value.trim().length < 5) {
+                alert("Password should be at least 5 characters");
+            }
+
+
+            else {
+                return true;
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="background">
+        <div class="loginbox">
+            <p id="LoginText"> Log In </p>
+            <div id="underline"></div>
+
+            <form onsubmit="return validate()" ;>
+
+                <input id="uname" type="text" name="" placeholder="Enter Username" />
+                <label id="lbluser" style="color:red; visibility: hidden;">Invalid</label>
+
+                <input id="pass" type="password" name="" placeholder="Enter Password">
+                <input id="submit" type="submit" name="" value="Log In"><br><br>
+
+                <a id="create" href="register.html"><b class="submitext">Create an account</b> </a>
+
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
