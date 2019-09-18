@@ -114,32 +114,7 @@
             background: rgba(62, 179, 214, 0.74);
             border-radius: 0px 0px 18px 18px;
         }
-      @media only screen and (min-width: 701px) and (max-width: 900px){
-          
-              .body {
-            position: absolute;
-            width: 135%;
-            height:63%;
-            background: #FFFFFF;
-
-            margin: 0%;
-            padding: 0%;
-            background: url(Copenhagen.jpeg);
-            background-size: cover;
-            background-position: center;
-            font-family: sans-serif;
-        }
-         .loginbox {
-            position: absolute;
-            width: 137.5%;
-            height: 97.75%;
-            left: 100%;
-            top: 55%;
-            background: rgba(242, 242, 242, 0.5);
-            border-radius: 3.75%;
-
-          
-      }}
+     
 
         .submitext {
             position: absolute;
