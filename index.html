@@ -1,18 +1,20 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login Form Design</title>
-    <link rel="stylesheet" type="text/css" href="style1.css">
+    <title>Team Copenhagen</title>
+        <link rel="stylesheet" type="text/css" href="style1.css">
+   
     <script type="text/javascript">
         function validate() {
             var uname = document.getElementById("uname");
             var password = document.getElementById("pass");
 
             if (uname.value.trim() == "") {
-                  alert("Blank Username");     
-            
+                alert("Blank Username");
+
                 return false;
             }
 
@@ -22,11 +24,10 @@
                 return false;
             }
 
-            else if (password.value.trim().length < 5)
-             {
+            else if (password.value.trim().length < 5) {
                 alert("Password should be at least 5 characters");
-                }
-               
+            }
+
 
             else {
                 return true;
@@ -36,29 +37,27 @@
         }
     </script>
 </head>
-<body>
-    
-    <nav></nav>
-    
-    <div class="loginbox">
-        <img src="team logo.jpg" class="avatar">
-        
-        <form onsubmit="return validate()" ;>
-            <p style="color: black">Username</p> 
-            <input id="uname" type="text" name="" placeholder="Enter Username"/>
-            <label id="lbluser" style="color:red; visibility: hidden;">Invalid</label>
-            <p style="color: black">Password</p>
-            <input id="pass" type="password" name="" placeholder="Enter Password">
-            <input type="submit" name="" value="Login"><br><br>
-          
-            <a href="register.html"  style="color: purple" ><i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Sign up here</b></i> </a>
-        </form>
 
+<body>
+    <div id="background">
+        <div class="loginbox">
+            <p id="LoginText"> Log In </p>
+            <div id="underline"></div>
+
+            <form onsubmit="return validate()" ;>
+
+                <input id="uname" type="text" name="" placeholder="Enter Username" />
+                <label id="lbluser" style="color:red; visibility: hidden;">Invalid</label>
+
+                <input id="pass" type="password" name="" placeholder="Enter Password">
+                <input id="submit" type="submit" name="" value="Log In"><br><br>
+
+                <a id="create" href="register.html"><b class="submitext">Create an account</b> </a>
+
+            </form>
+
+        </div>
     </div>
 </body>
+
 </html>
-
-
-
-
