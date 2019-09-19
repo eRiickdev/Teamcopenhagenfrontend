@@ -33,6 +33,7 @@ function validate(){
 	}
 
 	alert("Registeration Successful");
+	window.assign.location("index.php");
 	return true;
 
 }

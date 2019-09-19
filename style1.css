@@ -1,0 +1,180 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background: url(Copenhagen.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.loginbox{
+    width: 400px;
+    height: 450px;
+    background:rgba(255, 255, 255, 0.5);;
+    color: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    margin-top:20px;
+    border-radius: 15px;
+}
+
+
+        #LoginText {
+            position: absolute;
+            width: 100px;
+            height: 56px;
+            left: 155px;
+            top: -25px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 35px;
+            line-height: 56px;
+            color: #333333;
+        }
+
+        #underline {
+            position: absolute;
+            width: 300px;
+            height: 0px;
+            left: 50px;
+            top: 80px;
+            border: 1px solid #000000;
+        }
+
+        #uname {
+            position: absolute;
+            width: 300px;
+            height: 42px;
+            left: 52px;
+            top: 100px;
+            background:rgba(62, 179, 214, 0.74);
+            border-radius: 20px;
+        }
+
+        .loginbox input[type="text"],
+        input[type="password"] {
+
+            position: absolute;
+            width: 60px;
+            height: 28px;
+            left: 519px;
+            top: 487px;
+            padding-left: 10px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 28px;
+            color: #F2F2F2;
+            border: 0;
+        }
+
+        #pass {
+            position: absolute;
+            width: 300px;
+            height: 42px;
+            left: 52px;
+            top: 170px;
+            background: rgba(62, 179, 214, 0.74);
+            border-radius: 20px;
+            border: 0;
+        }
+
+        #submit {
+            position: absolute;
+            width: 300px;
+            height: 42px;
+            left: 52px;
+            top: 240px;
+            background: #333333;
+            border-radius: 20px;
+            border: 0;
+            opacity: 0.8;
+            color: #f1f1f1;
+            font-size: 18px;
+        }
+
+        #submit:hover{
+            cursor: pointer;
+        }
+
+        .loginbox input[value="Log In"] {
+            position: absolute;
+            width: 75px;
+            height: 28px;
+            left: 150px;
+            top: 270px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        #create {
+            position: absolute;
+            width: 400px;
+            height: 52px;
+            left: 0px;
+            top: 400px;
+            background: rgba(62, 179, 214, 0.74);
+            border-radius: 0px 0px 18px 18px;
+        }
+    
+
+        .submitext {
+            position: absolute;
+            width: 200px;
+            height: 28px;
+            top: 10px;
+            left:95px;
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 28px;
+            color: #f1f1f1;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .loginbox{
+                width: 320px;
+                height: 420px;
+            }
+            #underline{
+                width: 250px;
+                left:30px;
+            }
+            #LoginText{
+                font-size: 22px;
+                top: 0px;
+                left: 130px;
+            }
+            #uname, #pass, #submit{
+                width: 255px;
+                left: 30px;
+            }
+            #create{
+                width:320px;
+                top: 370px;
+            }
+            .submitext{
+                left: 60px;
+            }
+
+        }
+
+#error{
+    margin-bottom: 20px;
+    padding: 0px;
+    background:red;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    color: #fff;
+}
