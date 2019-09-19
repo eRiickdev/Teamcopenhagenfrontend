@@ -107,3 +107,14 @@ input[type=email]::placeholder{
         width: 35%;
     }
 }
+
+#error{
+	margin-bottom: 20px;
+	padding: 0px;
+	background:red;
+	text-align: center;
+	font-size: 14px;
+	transition: all 0.5s ease;
+	color: #fff;
+
+}
