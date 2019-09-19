@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<html lang="eng">
 	<meta charset="utf-8">
@@ -8,54 +9,33 @@
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<title>Register</title>
 </head>
+
 <body>
+	<main>
+		<nav>
+			<div class="navbar">
+				<a href="#" class="logo">
+					<img src="https://res.cloudinary.com/eriick/image/upload/v1568855212/logo1_eo9qds.jpg" alt="logoimg" height="100">
+				</a>
+			</div>
+		</nav>
+		<div class="container">
+			<h2>Copenhagen Sign Up</h2>
 
-<div id="wrapper">
-	<div class="container">
-		<span class="heading">Copenhagen Sign Up</span>
-		
-		<form action="" method="post" onsubmit="return validate()">
-			<div id="error"></div>
-			<div class="input-group">
-				<i class="fas fa-user"></i>
+			<form action="" method="post" onsubmit="return validate()">
+				<div id="error"></div>
 				<input type="text" name="username" placeholder="Username" id="username" required>
-				<span class="bar"></span>
-			</div>
-
-			<div class="input-group">
-				<i class="fas fa-envelope"></i>
 				<input type="email" name="email" placeholder="Email" id="email">
-				<span class="bar"></span>
-			</div>
-
-			<div class="input-group">
-				<i class="fas fa-lock"></i>
 				<input type="password" name="password" placeholder="Password" id="password" required>
-				<span class="bar"></span>
-			</div>
+				<input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password"
+					required>
+				<button id="submit" type="submit" class="mybtn">Sign Up</button>
+				<p class="footer">Already have an account? <a href="index.html" class="footer-link">Login</a></p>
+			</form>
+		</div>
+	</main>
 
-			<div class="input-group">
-				<i class="fas fa-lock"></i>
-				<input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required>
-				<span class="bar"></span>
-			</div>
-
-			<div class="input-group">
-				<button id="submit" type="submit">
-					<i class="fab fa-telegram-plane"></i>
-				</button>
-			</div>
-
-			<div class="switch-login">
-				<a href="index.html">Already have an account? <span>Login</span></a>
-			</div>
-
-
-		</form>
-	</div>
-</div>
-
-
-<script src="register.js"></script>
+	<script src="register.js"></script>
 </body>
+
 </html>
